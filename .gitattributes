@@ -1,0 +1,6 @@
+*.sh linguist-detectable=false
+*.bat linguist-detectable=false
+*.toml linguist-detectable=false
+*.ps1 linguist-detectable=false
+*.md linguist-detectable=false
+*.txt linguist-detectable=false
