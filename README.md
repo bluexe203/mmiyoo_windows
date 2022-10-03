@@ -1,4 +1,4 @@
-# Rust for Miyoo Mini on Windows10
+# Develop rust applications for Miyoo Mini on Windows
 
 ## Setup Rust
 
