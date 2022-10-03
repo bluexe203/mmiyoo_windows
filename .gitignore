@@ -1,0 +1,9 @@
+*.zip
+*.7z
+*.pdf
+*openbor/
+*SDL2*/
+*target*/
+config
+sdl_test/sdl_test
+*.lock
