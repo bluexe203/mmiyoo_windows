@@ -6,4 +6,5 @@
 *target*/
 config
 sdl_test/sdl_test
+sdl_raqote/sdl_raqote
 *.lock

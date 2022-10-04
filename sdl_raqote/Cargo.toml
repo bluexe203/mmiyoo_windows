@@ -1,0 +1,10 @@
+[package]
+name = "sdl_raqote"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+sdl2 = "0.35"
+raqote = { version = "0.8.1", default-features = false}

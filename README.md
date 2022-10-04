@@ -218,3 +218,9 @@ cargo run
   - Select Tools > sdl_test
     
     Screen shows blue color.
+    
+    ![sdl_test](https://user-images.githubusercontent.com/87966746/193721152-8901191c-eafa-403a-a1ab-c094c3f5a7b7.png)
+  
+  - Select Tools > sdl_raqote
+    
+    ![sdl_raqote](https://user-images.githubusercontent.com/87966746/193721320-7ad6ae74-d2a1-4592-9b7d-ad844641f8bd.png)
