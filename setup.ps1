@@ -1,9 +1,10 @@
 cd $PSScriptRoot
 
 echo "create .cargo/config"
-Set-Content -Path "config" "[target.armv7-unknown-linux-gnueabihf]`nlinker = `"arm-unknown-linux-gnueabihf-gcc`"`nrustflags = [`"-C`", `"link-arg=-fuse-ld=gold`", `"--remap-path-prefix`", `"$env:USERPROFILE=~`"]`n`n[target.x86_64-pc-windows-msvc]`nrustflags = [`"-C`", `"target-feature=+crt-static`", `"--remap-path-prefix`", `"$env:USERPROFILE=~`"]`n`n[profile.release]`nstrip = true`n" -NoNewline
-$lfText = [System.IO.File]::ReadAllText("config").Replace("\","\\")
-[System.IO.File]::WriteAllText("config", $lfText)
+$lfText = "[target.armv7-unknown-linux-gnueabihf]`nlinker = `"arm-unknown-linux-gnueabihf-gcc`"`nrustflags = [`"-C`", `"link-arg=-fuse-ld=gold`", `"--remap-path-prefix`", `"$env:USERPROFILE=~`"]`n`n[target.x86_64-pc-windows-msvc]`nrustflags = [`"-C`", `"target-feature=+crt-static`", `"--remap-path-prefix`", `"$env:USERPROFILE=~`"]`n`n[profile.release]`nstrip = true`n"
+$lfText = $lfText.Replace("\","\\")
+Set-Content -Path "config" $lfText -NoNewline
+#Set-Content -Path "config" "[target.armv7-unknown-linux-gnueabihf]`nlinker = `"arm-unknown-linux-gnueabihf-gcc`"`nrustflags = [`"-C`", `"link-arg=-fuse-ld=gold`", `"--remap-path-prefix`", `"$env:USERPROFILE=~`"]`n`n[target.x86_64-pc-windows-msvc]`nrustflags = [`"-C`", `"target-feature=+crt-static`", `"--remap-path-prefix`", `"$env:USERPROFILE=~`"]`n`n[profile.release]`nstrip = true`n" -NoNewline
 
 echo "download toolchain for Miyoo mini on Windows"
 if (!(Test-Path ".\buildroot_gcc8.2.1_armv7_Windows.7z"))
