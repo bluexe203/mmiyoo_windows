@@ -61,6 +61,7 @@ echo "copy library to .rustup"
 Copy-Item -Path .\openbor\lib\libSDL2-2.0.so.0 -Destination $env:USERPROFILE\.rustup\toolchains\stable-x86_64-pc-windows-msvc\lib\rustlib\armv7-unknown-linux-gnueabihf\lib\libSDL2.so -Force
 Copy-Item -Path .\SDL2-2.24.0\lib\x64\SDL2.dll -Destination $env:USERPROFILE\.rustup\toolchains\stable-x86_64-pc-windows-msvc\lib\rustlib\x86_64-pc-windows-msvc\lib\SDL2.dll -Force
 Copy-Item -Path .\SDL2-2.24.0\lib\x64\SDL2.dll -Destination $env:USERPROFILE\.rustup\toolchains\stable-x86_64-pc-windows-msvc\lib\rustlib\x86_64-pc-windows-msvc\bin\SDL2.dll -Force
+Copy-Item -Path .\SDL2-2.24.0\lib\x64\SDL2.dll -Destination $env:USERPROFILE\.rustup\toolchains\stable-x86_64-pc-windows-msvc\bin\SDL2.dll -Force
 Copy-Item -Path .\SDL2-2.24.0\lib\x64\SDL2.lib -Destination $env:USERPROFILE\.rustup\toolchains\stable-x86_64-pc-windows-msvc\lib\rustlib\x86_64-pc-windows-msvc\lib\SDL2.lib -Force
 Copy-Item -Path .\SDL2-2.24.0\lib\x64\SDL2main.lib -Destination $env:USERPROFILE\.rustup\toolchains\stable-x86_64-pc-windows-msvc\lib\rustlib\x86_64-pc-windows-msvc\lib\SDL2main.lib -Force
 Copy-Item -Path .\SDL2-2.24.0\lib\x64\SDL2test.lib -Destination $env:USERPROFILE\.rustup\toolchains\stable-x86_64-pc-windows-msvc\lib\rustlib\x86_64-pc-windows-msvc\lib\SDL2test.lib -Force
