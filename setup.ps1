@@ -15,7 +15,7 @@ if (!(Test-Path ".\buildroot_gcc8.2.1_armv7_Windows.7z"))
 echo "download SDL lib for Miyoo mini"
 if (!(Test-Path ".\openbor_20220422.zip"))
 {
-	curl.exe -LO https://github.com/steward-fu/miyoo-mini/releases/download/stock/openbor_20220422.zip
+	curl.exe -LO https://github.com/steward-fu/archives/releases/download/miyoo-mini/bin_openbor_20220422.zip
 }
 
 echo "download SDL lib for Windows"
@@ -27,7 +27,7 @@ if (!(Test-Path ".\SDL2-devel-2.24.0-VC.zip"))
 echo "download parasyte"
 if (!(Test-Path ".\parasyte_20220125.zip"))
 {
-	curl.exe -LO https://github.com/steward-fu/miyoo-mini/releases/download/stock/parasyte_20220125.zip
+	curl.exe -LO https://github.com/steward-fu/archives/releases/download/miyoo-mini/bin_parasyte_20220125.zip
 }
 
 echo "extract lib"
